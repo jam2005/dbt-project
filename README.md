@@ -64,20 +64,22 @@ dbt docs generate
 dbt docs serve
 # → open http://localhost:8080
 
-📂 Project Structure
-text
+## 📂 Project Structure
+
+```
 dbt-project/
 ├── models/
-│   ├── staging/           ← source-aligned cleaned views
-│   └── marts/             ← business entities & KPIs (final tables)
-├── seeds/                 ← static CSV reference data
-├── snapshots/             ← type-2 SCD tracking
-├── macros/                ← reusable Jinja SQL logic
-├── tests/                 ← singular & generic data tests
-├── analyses/              ← ad-hoc / exploratory SQL (not materialized)
-├── dbt_project.yml        ← main project configuration
-├── packages.yml           ← external dbt packages (if any)
-└── profiles.yml.example   ← template – do NOT commit real credentials!
+│   ├── staging/      ← source-aligned cleaned views
+│   └── marts/        ← business entities & KPIs (final tables)
+├── seeds/            ← static CSV reference data
+├── snapshots/        ← type-2 SCD tracking
+├── macros/           ← reusable Jinja SQL logic
+├── tests/            ← singular & generic data tests
+├── analyses/         ← ad-hoc / exploratory SQL (not materialized)
+├── dbt_project.yml   ← main project configuration
+├── packages.yml      ← external dbt packages (if any)
+└── profiles.yml.example ← template – do NOT commit real credentials!
+```
 
 🛠 Development Workflow
 Recommended pattern:
