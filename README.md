@@ -75,10 +75,10 @@ dbt-project/
 ├── snapshots/        ← type-2 SCD tracking
 ├── macros/           ← reusable Jinja SQL logic
 ├── tests/            ← singular & generic data tests
-├── analyses/         ← ad-hoc / exploratory SQL (not materialized)
+├── analyses/         ← ad-hoc / exploratory SQL 
 ├── dbt_project.yml   ← main project configuration
-├── packages.yml      ← external dbt packages (if any)
-└── profiles.yml.example ← template – do NOT commit real credentials!
+├── packages.yml      ← external dbt packages 
+└── profiles.yml.example ← template 
 ```
 
 🛠 Development Workflow
